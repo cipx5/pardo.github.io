@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+        background-color: #f2f2f2;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #3342cc;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            font-weight: bold;
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #812da8;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #3342cc;
+        }
+        .pagination {
+            display: inline-block
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            background-color: #1aa7ec;
+            color: white;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        .pagination-container {
+            text-align: center;
+        }
+
+        .aside {
+            padding: 15px;
+            color: #000000;
+            text-align: left;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #3342cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+           
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            /* For tablets: */
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Genlio O. Pardo</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>            
+                <a href="index.html" style="text-decoration: none"><li>About me</li></a>
+                <a href="Subjects_Taken.html" style="text-decoration: none"><li>Subject taken</li></a>
+                <a href="enrolled.html" style="text-decoration: none"><li>Enrolled</li></a>
+                <a href="contact.html" style="text-decoration: none"><li>Contact me</li></a>
+                <a href="my-favorites.html" style="text-decoration: none"><li>My favorites</li></a>
+                <a href="Gallery.html" style="text-decoration: none"><li>Gallery</li></a>
+            </ul>
+        </div>
+
+        <div class="col-7 col-s-9">
+            <h1>Subject Taken</h1>
+            <table>
+                <tr>
+                    <td>Time</td>
+                    <td>Day</td>
+                    <td>Subject</td>
+                    <td>Description</td>
+                    <td>Units</td>
+    
+                </tr>
+                <tr>
+                    <td>08001100A</td>
+                    <td>F</td>
+                    <td>OC 1</td>
+                    <td>ORIENTATION COURSE 1</td>
+                    <td>3.0</td>
+    
+                </tr>
+                <tr>
+                    <td>10051105A - 01000230P</td>
+                    <td>MT-MT</td>
+                    <td>CSIT 1</td>
+                    <td>INTRODUCTION TO COMPUTING</td>
+                    <td>3.0</td>
+    
+                </tr>
+                <tr>
+                    <td>10051105A - 01000230P</td>
+                    <td>WH - WTH</td>
+                    <td>CSIT 2</td>
+                    <td>FUNDAMENTALS OF PROGRAMMING/COMPUTER PROGRAMMING 1</td>
+                    <td>3.0</td>
+    
+                </tr>
+                <tr>
+                    <td>08001100A</td>
+                    <td>F</td>
+                    <td>NSTP 11L</td>
+                    <td>NSTP 1-LITERACY TRAINING SERVICE (LTS)</td>
+                    <td>3.0</td>
+    
+                </tr>
+                <tr>
+                    <td>02350405P</td>
+                    <td>WH</td>
+                    <td>ENGL A</td>
+                    <td>GRAMMAR AND SPEECH ENHANCEMENT</td>
+                    <td>3.0</td>
+    
+                </tr>
+                <tr>
+                    <td>02350405P</td>
+                    <td>MT</td>
+                    <td>SOC SC 1</td>
+                    <td>UNDERSTANDING THE SELF / PAG-UNAWA SA SARILI</td>
+                    <td>3.0</td>
+    
+                </tr>
+                <tr>
+                    <td>02100510P</td>
+                    <td>F</td>
+                    <td>PE 1</td>
+                    <td>PATH FIT 1: MOVEMENT COMPETENCY TRAINING</td>
+                    <td>2.0</td>
+    
+                </tr>
+            </table>
+            <br>
+            <div style="text-align: center;">
+                <div class="pagination" style="text-align: center;">
+                    <a class="active" href="Subjects_Taken.html">1</a>
+                    <a href="Subjects_Taken_1.html">2</a>
+                    <a href="Subjects_Taken_2.html">3</a>
+                    <a href="Subjects_Taken_1.html">&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <div class="footer">
+        <p style="font-weight: bold;">© 2023 - 2024 ITP4 | All Right Reserved</p>
+    </div>
+
+</body>
+
+</html>
